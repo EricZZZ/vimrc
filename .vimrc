@@ -386,3 +386,16 @@ function! VisualSelection(direction, extra_filter) range
 endfunction
 
 set number
+
+call plug#begin()
+Plug 'scrooloose/nerdtree'
+Plug 'flazz/vim-colorschemes'
+call plug#end()
+
+autocmd VimEnter * NERDTree
+
+colorscheme molokai
+
+
+
+
